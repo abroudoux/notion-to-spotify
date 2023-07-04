@@ -49,7 +49,7 @@ async function addToDatabase(databaseId, title, real, status) {
 
 if ( process.argv.length === 5 ) {
     const title = process.argv[2];
-    const real = process.argv[3];
+    const artist = process.argv[3];
     const status = process.argv[4] === 'true' || process.argv[4] === 'false';
 
     addToDatabase(databaseId, title, artist, status);
