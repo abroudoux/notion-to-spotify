@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@notionhq/client": "^2.2.6",
+    "dotenv": "^16.3.1"
+  },
+  "name": "spotify-automatic-play",
+  "version": "1.0.0",
+  "main": "play.sh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get": "node get.js",
+    "add": "node add.js",
+    "results": "bash results.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
