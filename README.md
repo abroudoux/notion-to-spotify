@@ -1,1 +1,1 @@
-# Automatic Netflix Search from Notion list
+# Automatic play random album on Spotify with a Notion's list
