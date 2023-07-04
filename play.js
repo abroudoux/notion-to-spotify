@@ -1,76 +1,58 @@
-// const { promises: fsPromises } = require('fs');
-// const fs = require('fs').promises;
-// const puppeteer = require('puppeteer');
+const { promises: fsPromises } = require('fs');
+const { exec } = require('node:child_process')
 
-// let FilmsNetflix = [];
+let AlbumChoosen;
 
-// async function readFile(filename) {
-//     try {
-//         const contents = await fsPromises.readFile(filename, 'utf-8');
-//         FilmsList = contents.split(/\r?\n/);
+async function readFile(filename) {
+    try {
+        let contents = await fsPromises.readFile(filename, 'utf-8');
+        contents = contents.replace(/"/g, '');
+        Albums = contents.split(/\r?\n/);
 
-//         return FilmsList;
-//     } catch (err) {
-//         console.log(err);
-//     };
-// };
+        // test
+        console.log(Albums);
 
-// function extractFilmTitle(film) {
-//     const filmParts = film.replace(/"/g, '').split(' - ');
-//     return filmParts[0].trim();
-// };
+        return Albums;
+    } catch (err) {
+        console.log(err);
+    };
+};
 
-// async function getGoogleSearchResults(filmTitle) {
-//     const browser = await puppeteer.launch({ headless: "new" });
-//     const page = await browser.newPage();
+async function chooseAlbum() {
+    try {
+        const Albums = await readFile('./albums.txt');
 
-//     const searchQuery = `netflix ${filmTitle}`;
-//     const encodedSearchQuery = encodeURIComponent(searchQuery);
-//     const searchUrl = `https://www.google.com/search?q=${encodedSearchQuery}`;
+        let numberLine = Math.floor(Math.random() * (Albums.length));
+        AlbumChoosen = Albums[numberLine];
 
-//     await page.goto(searchUrl);
-//     await page.waitForSelector('div.g');
+        // test
+        console.log(AlbumChoosen);
 
-//     const searchResults = await page.$$eval('div.g', (results) => {
-//         results = results.slice(0, 1);
+        return AlbumChoosen;
+    } catch (err) {
+        console.log(err);
+    };
+};
 
-//         const titles = results.map((result) => {
-//             const titleElement = result.querySelector('h3');
-//             return titleElement ? titleElement.textContent : '';
-//         });
+async function launchSpotify() {
+    try {
+        exec(`spotify play album ${AlbumChoosen}`, (err) => {
+            if (err) {
+                console.error("could not execute command: ", err)
+                return
+            };
+        });
+        exec('ls ./', (err, output) => {
+            if (err) {
+                console.error("could not execute command: ", err)
+                return
+            }
+            console.log("Output: \n", output)
+        })
+    } catch (err) {
+        console.log(err);
+    };
+};
 
-//         return titles;
-//     });
-
-//     searchResults.forEach((title) => {
-//         if (title.startsWith('Watch')) {
-//             FilmsNetflix.push(filmTitle);
-//         };
-//     });
-
-//     await browser.close();
-// };
-
-// async function processFilmsList() {
-
-//     try {
-//         const FilmsList = await readFile('./films.txt');
-
-//         for (const film of FilmsList) {
-//             const filmTitle = extractFilmTitle(film);
-//             await getGoogleSearchResults(filmTitle);
-//         };
-
-//         try {
-//             fs.writeFile('filmsNetflix.txt', FilmsNetflix.join('\n'), 'utf-8');
-//         } catch (err) {
-//             console.error('Une erreur s\'est produite lors de l\'écriture du fichier :', err);
-//         }
-//     } catch (err) {
-//         console.error('Une erreur s\'est produite :', err);
-//     };
-// };
-
-// processFilmsList().catch((error) => {
-//     console.error('Une erreur s\'est produite :', error);
-// });
+chooseAlbum();
+launchSpotify();
