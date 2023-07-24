@@ -1,9 +1,11 @@
 {
   "dependencies": {
     "@notionhq/client": "^2.2.6",
+    "child_process": "^1.0.2",
     "dotenv": "^16.3.1",
     "jq": "^1.7.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "spotify-web-api-node": "^5.0.2"
   },
   "name": "spotify-automatic-play",
   "version": "1.0.0",

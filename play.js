@@ -1,5 +1,6 @@
 const { promises: fsPromises } = require('fs');
-const { exec } = require('node:child_process')
+const SpotifyWebApi = require('spotify-web-api-node');
+const { exec, execFile, spawn } = require('node:child_process');
 
 let AlbumChoosen;
 
@@ -10,7 +11,7 @@ async function readFile(filename) {
         Albums = contents.split(/\r?\n/);
 
         // test
-        console.log(Albums);
+        // console.log(Albums);
 
         return Albums;
     } catch (err) {
@@ -20,13 +21,13 @@ async function readFile(filename) {
 
 async function chooseAlbum() {
     try {
-        const Albums = await readFile('./albums.txt');
+        await readFile('./albums.txt');
 
         let numberLine = Math.floor(Math.random() * (Albums.length));
         AlbumChoosen = Albums[numberLine];
 
         // test
-        console.log(AlbumChoosen);
+        // console.log(AlbumChoosen);
 
         return AlbumChoosen;
     } catch (err) {
@@ -36,23 +37,50 @@ async function chooseAlbum() {
 
 async function launchSpotify() {
     try {
-        exec(`spotify play album ${AlbumChoosen}`, (err) => {
+        await chooseAlbum();
+
+        // test
+        // console.log(`test 1 ${AlbumChoosen}`);
+
+        // let command = `spotify shuffle off && spotify play album ${AlbumChoosen}`;
+        let command = `spotify play album Atlas`;
+
+        exec(command, (err, output) => {
             if (err) {
                 console.error("could not execute command: ", err)
                 return
             };
-        });
-        exec('ls ./', (err, output) => {
-            if (err) {
-                console.error("could not execute command: ", err)
-                return
-            }
             console.log("Output: \n", output)
-        })
+            console.log(`Vous écoutez actuellement : ${AlbumChoosen}`)
+        });
+
+        // let command = 'spotify';
+        // let args = ['play', 'artist', 'SZA'];
+
+        // const childProcess = spawn(command, args);
+        // // const childProcess = spawn('find', ['.']);
+
+        // childProcess.stdout.on('data', (data) => {
+        //     console.log('Output:', data.toString());
+        // i});
+
+        // childProcess.stderr.on('data', (data) => { 
+        //     console.error('Error:', data.toString());
+        // });
+
+        // childProcess.on('error', (err) => {
+        //     console.error('Spawn Error:', err);
+        // });
+
+        // childProcess.on('close', (code) => {
+        //     console.log('Child process exited with code', code);
+        //     console.log('Vous écoutez actuellement:', AlbumChoosen);
+        // });
     } catch (err) {
         console.log(err);
     };
 };
 
-chooseAlbum();
-launchSpotify();
+launchSpotify().catch((error) => {
+    console.error('Une erreur s\'est produite :', error);
+});

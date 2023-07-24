@@ -6,7 +6,7 @@ const databaseId = process.env.NOTION_DATABASE_ID;
 
 dotenv.config();
 
-async function addToDatabase(databaseId, title, real, status) {
+async function addToDatabase(databaseId, title, artist, status) {
     try {
         const response = await notion.pages.create({
             parent: {
@@ -54,5 +54,5 @@ if ( process.argv.length === 5 ) {
 
     addToDatabase(databaseId, title, artist, status);
 } else {
-    console.error('Veuillez fournir les 3 arguments nécessaires: title, real, status');
+    console.error('Veuillez fournir les 3 arguments nécessaires: title, artist, status');
 };
