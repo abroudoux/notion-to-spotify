@@ -1,4 +1,7 @@
 {
+  "name": "spotify-automatic-play",
+  "version": "0.0.0",
+  "main": "play.sh",
   "dependencies": {
     "@notionhq/client": "^2.2.6",
     "child_process": "^1.0.2",
@@ -7,13 +10,10 @@
     "path": "^0.12.7",
     "spotify-web-api-node": "^5.0.2"
   },
-  "name": "spotify-automatic-play",
-  "version": "1.0.0",
-  "main": "play.sh",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "get": "node get.js",
-    "add": "node add.js",
+    "get": "node src/get.js",
+    "add": "node src/add.js",
     "results": "bash results.sh"
   },
   "keywords": [],

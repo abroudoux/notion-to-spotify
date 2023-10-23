@@ -28,8 +28,10 @@ async function importPages() {
         page.children = blocks ;
     };
 
-    const outputFile = path.join(__dirname, "notion-export.json");
+    const outputFile = path.join(__dirname, "../exports/notion-export.json");
     fs.writeFileSync(outputFile, JSON.stringify(pages, null, 2));
+
+    console.log('Albums récupérés');
 };
 
 importPages();
