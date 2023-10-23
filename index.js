@@ -13,4 +13,6 @@ async function playScripts() {
     };
 };
 
-playScripts();
+playScripts().catch((err) => {
+    console.error(err);
+});
