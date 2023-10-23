@@ -12,12 +12,11 @@
     "spotify-web-api-node": "^5.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "get": "node src/get.js",
     "add": "node src/add.js",
-    "play": "node src/play.js",
-    "results": "bash results.sh"
+    "play": "bash scripts/play.sh"
   },
-  "author": "abroudoux",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
 }
