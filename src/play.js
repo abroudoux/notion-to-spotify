@@ -40,7 +40,11 @@ async function launchSpotify() {
     try {
         await chooseAlbum();
 
-        let command = `spotify play album ${AlbumChoosen}`;
+        let AlbumPlayed = AlbumChoosen.replace(/&/g, '');
+
+        console.log(AlbumPlayed);
+
+        let command = `spotify play album ${AlbumPlayed}`;
 
         exec(command, (err, output) => {
             if (err) {
@@ -48,7 +52,7 @@ async function launchSpotify() {
                 return
             };
             console.log(output)
-            console.log(`Vous écoutez actuellement : ${AlbumChoosen}`)
+            console.log(`Vous écoutez actuellement : ${AlbumPlayed}`)
         });
 
     } catch (err) {

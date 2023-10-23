@@ -3,7 +3,7 @@
     "object": "page",
     "id": "2c2f4cf9-ecf0-465c-a170-6f21df03a193",
     "created_time": "2023-10-23T11:29:00.000Z",
-    "last_edited_time": "2023-10-23T12:24:00.000Z",
+    "last_edited_time": "2023-10-23T13:26:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -27,7 +27,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Lil Yachty",
+              "content": "YG Pablo Sofiane Pamart",
               "link": null
             },
             "annotations": {
@@ -38,7 +38,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Lil Yachty",
+            "plain_text": "YG Pablo Sofiane Pamart",
             "href": null
           }
         ]
@@ -55,7 +55,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Let’s Start Here.",
+              "content": "DIAMOND TEARS",
               "link": null
             },
             "annotations": {
@@ -66,13 +66,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Let’s Start Here.",
+            "plain_text": "DIAMOND TEARS",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Let-s-Start-Here-2c2f4cf9ecf0465ca1706f21df03a193",
+    "url": "https://www.notion.so/DIAMOND-TEARS-2c2f4cf9ecf0465ca1706f21df03a193",
     "public_url": null,
     "children": []
   },
@@ -80,7 +80,7 @@
     "object": "page",
     "id": "05e527c2-6dcf-48c3-84ae-b79bc834b7ae",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T09:55:00.000Z",
+    "last_edited_time": "2023-10-23T12:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -157,7 +157,7 @@
     "object": "page",
     "id": "b52a30cd-a138-4615-b8c5-f003e1ad4d66",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T12:24:00.000Z",
+    "last_edited_time": "2023-10-23T12:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -181,7 +181,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Leo Germany",
+              "content": "Leto",
               "link": null
             },
             "annotations": {
@@ -192,7 +192,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Leo Germany",
+            "plain_text": "Leto",
             "href": null
           }
         ]
@@ -200,7 +200,7 @@
       "Listened": {
         "id": "~Xjs",
         "type": "checkbox",
-        "checkbox": false
+        "checkbox": true
       },
       "Title": {
         "id": "title",
@@ -209,7 +209,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Amethyste",
+              "content": "Trapstar 3",
               "link": null
             },
             "annotations": {
@@ -220,13 +220,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Amethyste",
+            "plain_text": "Trapstar 3",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Amethyste-b52a30cda1384615b8c5f003e1ad4d66",
+    "url": "https://www.notion.so/Trapstar-3-b52a30cda1384615b8c5f003e1ad4d66",
     "public_url": null,
     "children": []
   }
