@@ -1,10 +1,10 @@
+
 const { Client } = require("@notionhq/client");
 const fs = require("fs");
 const path = require("path");
-
-require("dotenv").config();
-
+const dotenv = require("dotenv").config();
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
 
 async function getBlocks(block_id) { 
 

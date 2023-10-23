@@ -1,9 +1,9 @@
 [
   {
     "object": "page",
-    "id": "40ebf44d-168c-4c2d-ad9a-8b47dfa16ac2",
-    "created_time": "2023-10-23T08:56:00.000Z",
-    "last_edited_time": "2023-10-23T08:58:00.000Z",
+    "id": "2c2f4cf9-ecf0-465c-a170-6f21df03a193",
+    "created_time": "2023-10-23T11:29:00.000Z",
+    "last_edited_time": "2023-10-23T11:46:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -27,7 +27,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Bolemvn",
+              "content": "Alexander Panos",
               "link": null
             },
             "annotations": {
@@ -38,7 +38,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Bolemvn",
+            "plain_text": "Alexander Panos",
             "href": null
           }
         ]
@@ -55,7 +55,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Vo169",
+              "content": "Nascent",
               "link": null
             },
             "annotations": {
@@ -66,167 +66,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Vo169",
+            "plain_text": "Nascent",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Vo169-40ebf44d168c4c2dad9a8b47dfa16ac2",
-    "public_url": null,
-    "children": []
-  },
-  {
-    "object": "page",
-    "id": "fe129961-3542-4960-83b7-2bb1b9815058",
-    "created_time": "2023-10-23T08:55:00.000Z",
-    "last_edited_time": "2023-10-23T08:56:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "36a83b73-7d40-46c1-ba28-bfa185da3700"
-    },
-    "archived": false,
-    "properties": {
-      "Artist": {
-        "id": "Aab%7B",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Ninho",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Ninho",
-            "href": null
-          }
-        ]
-      },
-      "Listened": {
-        "id": "~Xjs",
-        "type": "checkbox",
-        "checkbox": true
-      },
-      "Title": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "NI",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "NI",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/NI-fe1299613542496083b72bb1b9815058",
-    "public_url": null,
-    "children": []
-  },
-  {
-    "object": "page",
-    "id": "cad9a232-ac2a-488f-bc9d-f06fd959317d",
-    "created_time": "2023-10-23T08:51:00.000Z",
-    "last_edited_time": "2023-10-23T08:56:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "36a83b73-7d40-46c1-ba28-bfa185da3700"
-    },
-    "archived": false,
-    "properties": {
-      "Artist": {
-        "id": "Aab%7B",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Queen",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Queen",
-            "href": null
-          }
-        ]
-      },
-      "Listened": {
-        "id": "~Xjs",
-        "type": "checkbox",
-        "checkbox": true
-      },
-      "Title": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Best Of Titles",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Best Of Titles",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/Best-Of-Titles-cad9a232ac2a488fbc9df06fd959317d",
+    "url": "https://www.notion.so/Nascent-2c2f4cf9ecf0465ca1706f21df03a193",
     "public_url": null,
     "children": []
   },
@@ -234,7 +80,7 @@
     "object": "page",
     "id": "05e527c2-6dcf-48c3-84ae-b79bc834b7ae",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T08:58:00.000Z",
+    "last_edited_time": "2023-10-23T09:55:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -277,7 +123,7 @@
       "Listened": {
         "id": "~Xjs",
         "type": "checkbox",
-        "checkbox": false
+        "checkbox": true
       },
       "Title": {
         "id": "title",
@@ -286,7 +132,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Trapstar 3",
+              "content": "Trapstar 2",
               "link": null
             },
             "annotations": {
@@ -297,13 +143,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Trapstar 3",
+            "plain_text": "Trapstar 2",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Trapstar-3-05e527c26dcf48c384aeb79bc834b7ae",
+    "url": "https://www.notion.so/Trapstar-2-05e527c26dcf48c384aeb79bc834b7ae",
     "public_url": null,
     "children": []
   },
@@ -311,7 +157,7 @@
     "object": "page",
     "id": "b52a30cd-a138-4615-b8c5-f003e1ad4d66",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T08:51:00.000Z",
+    "last_edited_time": "2023-10-23T11:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -335,7 +181,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Maria Carrey",
+              "content": "Bladee",
               "link": null
             },
             "annotations": {
@@ -346,7 +192,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Maria Carrey",
+            "plain_text": "Bladee",
             "href": null
           }
         ]
@@ -354,7 +200,7 @@
       "Listened": {
         "id": "~Xjs",
         "type": "checkbox",
-        "checkbox": true
+        "checkbox": false
       },
       "Title": {
         "id": "title",
@@ -363,7 +209,7 @@
           {
             "type": "text",
             "text": {
-              "content": "All I want for Christmas",
+              "content": "Crest",
               "link": null
             },
             "annotations": {
@@ -374,13 +220,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "All I want for Christmas",
+            "plain_text": "Crest",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/All-I-want-for-Christmas-b52a30cda1384615b8c5f003e1ad4d66",
+    "url": "https://www.notion.so/Crest-b52a30cda1384615b8c5f003e1ad4d66",
     "public_url": null,
     "children": []
   }
