@@ -1,6 +1,8 @@
 {
   "name": "spotify-automatic-play",
   "description": "",
+  "author": "abroudoux",
+  "license": "MIT",
   "version": "0.0.0",
   "main": "play.sh",
   "dependencies": {
@@ -15,8 +17,12 @@
     "get": "node src/get.js",
     "add": "node src/add.js",
     "play": "bash scripts/play.sh"
+<<<<<<< HEAD
   },
   "keywords": [],
   "author": "",
   "license": "MIT"
+=======
+  }
+>>>>>>> merge
 }

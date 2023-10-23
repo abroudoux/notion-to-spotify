@@ -1,7 +1,6 @@
 
 const { promises: fsPromises } = require('fs');
-const SpotifyWebApi = require('spotify-web-api-node');
-const { exec, execFile, spawn } = require('node:child_process');
+const { exec } = require('node:child_process');
 
 
 let AlbumChoosen;
@@ -13,7 +12,7 @@ async function readFile(filename) {
         Albums = contents.split(/\r?\n/);
 
         // Debug
-        console.log('Albums :', Albums);
+        // console.log('Albums :', Albums);
 
         return Albums;
     } catch (err) {
@@ -29,7 +28,7 @@ async function chooseAlbum() {
         AlbumChoosen = Albums[numberLine];
 
         // Debug
-        console.log('Album choisi :', AlbumChoosen);
+        // console.log('Album choisi :', AlbumChoosen);
 
         return AlbumChoosen;
     } catch (err) {
@@ -41,9 +40,6 @@ async function launchSpotify() {
     try {
         await chooseAlbum();
 
-        // Debug
-        console.log(AlbumChoosen);
-
         let command = `spotify play album ${AlbumChoosen}`;
 
         exec(command, (err, output) => {
@@ -51,7 +47,7 @@ async function launchSpotify() {
                 console.error("could not execute command: ", err)
                 return
             };
-            console.log("Output: \n", output)
+            console.log(output)
             console.log(`Vous écoutez actuellement : ${AlbumChoosen}`)
         });
 
