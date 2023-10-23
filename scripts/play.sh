@@ -1,6 +1,0 @@
-node src/get.js
-
-cat exports/notion-export.json | jq '.[] | select(.properties.Listened.checkbox == false) | "\(.properties.Title.title[0].plain_text) - \(.properties.Artist.rich_text[0].plain_text)"' > albums.txt
-echo "Fichier écrit"
-
-node src/play.js

@@ -5,32 +5,40 @@ const dotenv = require("dotenv").config();
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
 
-async function getBlocks(block_id) { 
+async function get() {
 
-    let { results: children } = await notion.blocks.children.list({ block_id });
+    async function getBlocks(block_id) { 
 
-    for ( const child of children ) {
-        const grandChildren = await getBlocks(child.id);
-        child.children = grandChildren;
-    }
-    return children;
-};
+        let { results: children } = await notion.blocks.children.list({ block_id });
 
-async function importPages() {
-
-    let { results: pages } = await notion.databases.query({
-        database_id: process.env.NOTION_DATABASE_ID,
-    });
-
-    for ( const page of pages ) {
-        const blocks = await getBlocks(page.id);
-        page.children = blocks ;
+        for ( const child of children ) {
+            const grandChildren = await getBlocks(child.id);
+            child.children = grandChildren;
+        };
+        return children;
     };
 
-    const outputFile = path.join(__dirname, "../exports/notion-export.json");
-    fs.writeFileSync(outputFile, JSON.stringify(pages, null, 2));
+    async function importPages() {
 
-    console.log('Albums récupérés');
+        let { results: pages } = await notion.databases.query({
+            database_id: process.env.NOTION_DATABASE_ID,
+        });
+
+        for ( const page of pages ) {
+            const blocks = await getBlocks(page.id);
+            page.children = blocks ;
+        };
+
+        const outputFile = path.join(__dirname, "../exports/notion-export.json");
+        fs.writeFileSync(outputFile, JSON.stringify(pages, null, 2));
+
+        console.log('Import successful');
+    };
+
+
+    await importPages();
 };
 
-importPages();
+
+module.exports = { get };
+
