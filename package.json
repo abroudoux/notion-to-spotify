@@ -17,12 +17,5 @@
     "get": "node src/get.js",
     "add": "node src/add.js",
     "play": "bash scripts/play.sh"
-<<<<<<< HEAD
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
-=======
   }
->>>>>>> merge
 }

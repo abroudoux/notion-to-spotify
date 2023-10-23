@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-=======
 "Atlas - FM-84"
 "Megalover - Yuri Online"
->>>>>>> merge

@@ -3,11 +3,7 @@
     "object": "page",
     "id": "2c2f4cf9-ecf0-465c-a170-6f21df03a193",
     "created_time": "2023-10-23T11:29:00.000Z",
-<<<<<<< HEAD
-    "last_edited_time": "2023-10-23T11:52:00.000Z",
-=======
     "last_edited_time": "2023-10-23T12:09:00.000Z",
->>>>>>> merge
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -31,11 +27,7 @@
           {
             "type": "text",
             "text": {
-<<<<<<< HEAD
-              "content": "bupropion.",
-=======
               "content": "FM-84",
->>>>>>> merge
               "link": null
             },
             "annotations": {
@@ -46,11 +38,7 @@
               "code": false,
               "color": "default"
             },
-<<<<<<< HEAD
-            "plain_text": "bupropion.",
-=======
             "plain_text": "FM-84",
->>>>>>> merge
             "href": null
           }
         ]
@@ -67,11 +55,7 @@
           {
             "type": "text",
             "text": {
-<<<<<<< HEAD
-              "content": "whoever",
-=======
               "content": "Atlas",
->>>>>>> merge
               "link": null
             },
             "annotations": {
@@ -82,21 +66,13 @@
               "code": false,
               "color": "default"
             },
-<<<<<<< HEAD
-            "plain_text": "whoever",
-=======
             "plain_text": "Atlas",
->>>>>>> merge
             "href": null
           }
         ]
       }
     },
-<<<<<<< HEAD
-    "url": "https://www.notion.so/whoever-2c2f4cf9ecf0465ca1706f21df03a193",
-=======
     "url": "https://www.notion.so/Atlas-2c2f4cf9ecf0465ca1706f21df03a193",
->>>>>>> merge
     "public_url": null,
     "children": []
   },
@@ -181,11 +157,7 @@
     "object": "page",
     "id": "b52a30cd-a138-4615-b8c5-f003e1ad4d66",
     "created_time": "2023-07-04T15:27:00.000Z",
-<<<<<<< HEAD
-    "last_edited_time": "2023-10-23T11:52:00.000Z",
-=======
     "last_edited_time": "2023-10-23T12:09:00.000Z",
->>>>>>> merge
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -209,11 +181,7 @@
           {
             "type": "text",
             "text": {
-<<<<<<< HEAD
-              "content": "bupropion.",
-=======
               "content": "Yuri Online",
->>>>>>> merge
               "link": null
             },
             "annotations": {
@@ -224,11 +192,7 @@
               "code": false,
               "color": "default"
             },
-<<<<<<< HEAD
-            "plain_text": "bupropion.",
-=======
             "plain_text": "Yuri Online",
->>>>>>> merge
             "href": null
           }
         ]
@@ -245,11 +209,7 @@
           {
             "type": "text",
             "text": {
-<<<<<<< HEAD
-              "content": "deformation",
-=======
               "content": "Megalover",
->>>>>>> merge
               "link": null
             },
             "annotations": {
@@ -260,21 +220,13 @@
               "code": false,
               "color": "default"
             },
-<<<<<<< HEAD
-            "plain_text": "deformation",
-=======
             "plain_text": "Megalover",
->>>>>>> merge
             "href": null
           }
         ]
       }
     },
-<<<<<<< HEAD
-    "url": "https://www.notion.so/deformation-b52a30cda1384615b8c5f003e1ad4d66",
-=======
     "url": "https://www.notion.so/Megalover-b52a30cda1384615b8c5f003e1ad4d66",
->>>>>>> merge
     "public_url": null,
     "children": []
   }
