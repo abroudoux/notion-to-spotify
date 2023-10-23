@@ -1,6 +1,8 @@
 {
   "name": "spotify-automatic-play",
   "description": "",
+  "author": "abroudoux",
+  "license": "MIT",
   "version": "0.0.0",
   "main": "play.sh",
   "dependencies": {
@@ -15,9 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "get": "node src/get.js",
     "add": "node src/add.js",
-    "play": "node src/play.js",
-    "results": "bash results.sh"
-  },
-  "author": "abroudoux",
-  "license": "ISC"
+    "play": "bash scripts/play.sh"
+  }
 }
