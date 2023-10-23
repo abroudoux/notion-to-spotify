@@ -24,7 +24,7 @@ async function chooseAlbum() {
     try {
         await readFile('./albums.txt');
 
-        let numberLine = Math.floor(Math.random() * (Albums.length));
+        let numberLine = Math.floor(Math.random() * (Albums.length - 1));
         AlbumChoosen = Albums[numberLine];
 
         // Debug
@@ -56,6 +56,6 @@ async function launchSpotify() {
     };
 };
 
-launchSpotify().catch((error) => {
-    console.error('Une erreur s\'est produite :', error);
+launchSpotify().catch((err) => {
+    console.error(err);
 });

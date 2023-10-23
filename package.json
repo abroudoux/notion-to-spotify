@@ -3,8 +3,8 @@
   "description": "",
   "author": "abroudoux",
   "license": "MIT",
-  "version": "0.0.0",
-  "main": "play.sh",
+  "version": "1.0.0",
+  "main": "scripts/play.sh",
   "dependencies": {
     "@notionhq/client": "^2.2.6",
     "child_process": "^1.0.2",
