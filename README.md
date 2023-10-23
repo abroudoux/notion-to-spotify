@@ -16,7 +16,7 @@ git clone https://github.com/abroudoux/spotify-automatic-play
 brew install --cask spotify
 ```
 
-### Manually 
+### Manual installation
 
 [Download and install](http://www.spotify.com/download) the Spotify
 desktop application [here](http://www.spotify.com/download)
@@ -24,7 +24,7 @@ desktop application [here](http://www.spotify.com/download)
 
 ## Install and setup Shpotify
 
-> The explanations come from [the shpotify repository](https://github.com/hnarayanan/shpotify)
+> The explanations come from [the shpotify repository](https://github.com/hnarayanan/shpotify) by [hnarayanan](https://github.com/hnarayanan)
 
 ### With Homebrew
 

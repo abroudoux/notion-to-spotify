@@ -1,4 +1,3 @@
-
 const { Client } = require("@notionhq/client");
 const fs = require("fs");
 const path = require("path");
@@ -12,7 +11,7 @@ async function getBlocks(block_id) {
 
     for ( const child of children ) {
         const grandChildren = await getBlocks(child.id);
-        child.children = grandChildren; 
+        child.children = grandChildren;
     }
     return children;
 };

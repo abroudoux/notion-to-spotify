@@ -1,4 +1,3 @@
-
 const { promises: fsPromises } = require('fs');
 const { exec } = require('node:child_process');
 
@@ -12,7 +11,7 @@ async function readFile(filename) {
         Albums = contents.split(/\r?\n/);
 
         // Debug
-        // console.log('Albums :', Albums);
+        console.log('Albums :', Albums);
 
         return Albums;
     } catch (err) {
@@ -28,7 +27,7 @@ async function chooseAlbum() {
         AlbumChoosen = Albums[numberLine];
 
         // Debug
-        // console.log('Album choisi :', AlbumChoosen);
+        console.log('Album choisi :', AlbumChoosen);
 
         return AlbumChoosen;
     } catch (err) {
@@ -42,6 +41,7 @@ async function launchSpotify() {
 
         let AlbumPlayed = AlbumChoosen.replace(/&/g, '');
 
+        // Debug
         console.log(AlbumPlayed);
 
         let command = `spotify play album ${AlbumPlayed}`;

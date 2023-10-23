@@ -3,7 +3,7 @@
     "object": "page",
     "id": "2c2f4cf9-ecf0-465c-a170-6f21df03a193",
     "created_time": "2023-10-23T11:29:00.000Z",
-    "last_edited_time": "2023-10-23T13:26:00.000Z",
+    "last_edited_time": "2023-10-23T14:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -27,7 +27,7 @@
           {
             "type": "text",
             "text": {
-              "content": "YG Pablo Sofiane Pamart",
+              "content": "Austin Wintory",
               "link": null
             },
             "annotations": {
@@ -38,7 +38,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "YG Pablo Sofiane Pamart",
+            "plain_text": "Austin Wintory",
             "href": null
           }
         ]
@@ -55,7 +55,7 @@
           {
             "type": "text",
             "text": {
-              "content": "DIAMOND TEARS",
+              "content": "Transfiguration",
               "link": null
             },
             "annotations": {
@@ -66,13 +66,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "DIAMOND TEARS",
+            "plain_text": "Transfiguration",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/DIAMOND-TEARS-2c2f4cf9ecf0465ca1706f21df03a193",
+    "url": "https://www.notion.so/Transfiguration-2c2f4cf9ecf0465ca1706f21df03a193",
     "public_url": null,
     "children": []
   },
@@ -80,7 +80,7 @@
     "object": "page",
     "id": "05e527c2-6dcf-48c3-84ae-b79bc834b7ae",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T12:48:00.000Z",
+    "last_edited_time": "2023-10-23T14:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -104,7 +104,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Leto",
+              "content": "11radiance",
               "link": null
             },
             "annotations": {
@@ -115,7 +115,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Leto",
+            "plain_text": "11radiance",
             "href": null
           }
         ]
@@ -123,7 +123,7 @@
       "Listened": {
         "id": "~Xjs",
         "type": "checkbox",
-        "checkbox": true
+        "checkbox": false
       },
       "Title": {
         "id": "title",
@@ -132,7 +132,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Trapstar 2",
+              "content": "Hue",
               "link": null
             },
             "annotations": {
@@ -143,13 +143,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Trapstar 2",
+            "plain_text": "Hue",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Trapstar-2-05e527c26dcf48c384aeb79bc834b7ae",
+    "url": "https://www.notion.so/Hue-05e527c26dcf48c384aeb79bc834b7ae",
     "public_url": null,
     "children": []
   },
@@ -157,7 +157,7 @@
     "object": "page",
     "id": "b52a30cd-a138-4615-b8c5-f003e1ad4d66",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T12:48:00.000Z",
+    "last_edited_time": "2023-10-23T14:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -181,7 +181,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Leto",
+              "content": "Anri",
               "link": null
             },
             "annotations": {
@@ -192,7 +192,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Leto",
+            "plain_text": "Anri",
             "href": null
           }
         ]
@@ -200,7 +200,7 @@
       "Listened": {
         "id": "~Xjs",
         "type": "checkbox",
-        "checkbox": true
+        "checkbox": false
       },
       "Title": {
         "id": "title",
@@ -209,7 +209,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Trapstar 3",
+              "content": "Timely",
               "link": null
             },
             "annotations": {
@@ -220,13 +220,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Trapstar 3",
+            "plain_text": "Timely",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Trapstar-3-b52a30cda1384615b8c5f003e1ad4d66",
+    "url": "https://www.notion.so/Timely-b52a30cda1384615b8c5f003e1ad4d66",
     "public_url": null,
     "children": []
   }
