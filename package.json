@@ -8,10 +8,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "get": "node src/get.js",
-    "read": "node src/read.js",
-    "add": "node src/add.js",
+    "get": "node src/get/get.js",
+    "read": "node src/read/read.js",
+    "write": "node src/write/write.js",
+    "add": "node src/add/add.js",
+    "update": "node src/update/update.js",
     "play": "node index.js"
   },
   "dependencies": {
@@ -20,8 +21,5 @@
     "dotenv": "^16.3.1",
     "path": "^0.12.7",
     "spotify-web-api-node": "^5.0.2"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
   }
 }
