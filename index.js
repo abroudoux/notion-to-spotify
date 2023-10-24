@@ -1,6 +1,6 @@
-import { get } from "./src/get.js";
-import { read } from "./src/read.js";
-import { play } from "./src/play.js";
+import { get } from "./src/get/get.js";
+import { read } from "./src/read/read.js";
+import { play } from "./src/play/play.js";
 
 
 async function playScripts() {

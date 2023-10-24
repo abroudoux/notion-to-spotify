@@ -38,7 +38,7 @@ async function get() {
                 page.children = blocks ;
             };
 
-            const outputFile = join(__dirname, "../exports/notion-export.json");
+            const outputFile = join(__dirname, "../../exports/notion-export.json");
             writeFileSync(outputFile, JSON.stringify(pages, null, 2));
 
             console.log('Import successful');
