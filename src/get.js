@@ -5,8 +5,8 @@ import { join } from "path";
 import {} from "dotenv/config";
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
 
 async function get() {
 
