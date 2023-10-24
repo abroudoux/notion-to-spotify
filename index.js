@@ -1,13 +1,13 @@
-const { get } = require("./src/get.js");
-const { read } = require("./src/read.js");
-const { play } = require("./src/play.js");
+import { get } from "./src/get.js";
+// import { read } from "./src/read.js";
+// import { play } from "./src/play.js";
 
 
 async function playScripts() {
     try {
         await get();
-        await read();
-        await play();
+        // await read();
+        // await play();
     } catch (err) {
         console.log(err);
     };
