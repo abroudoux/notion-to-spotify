@@ -1,6 +1,7 @@
-const { promises: fsPromises } = require('fs');
-const { exec } = require('node:child_process');
+import { promises as fsPromises } from 'fs';
+import { exec } from 'node:child_process';
 
+let Albums;
 let AlbumChoosen;
 
 
@@ -66,4 +67,5 @@ async function play() {
 };
 
 
-module.exports = { play };
+export { play };
+
