@@ -1,9 +1,9 @@
 [
   {
     "object": "page",
-    "id": "2c2f4cf9-ecf0-465c-a170-6f21df03a193",
-    "created_time": "2023-10-23T11:29:00.000Z",
-    "last_edited_time": "2023-10-23T20:27:00.000Z",
+    "id": "75140f5a-7df1-45ea-a674-f29b650c4cf8",
+    "created_time": "2023-10-24T07:16:00.000Z",
+    "last_edited_time": "2023-10-24T07:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -27,7 +27,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Rêves",
+              "content": "Parannoul",
               "link": null
             },
             "annotations": {
@@ -38,7 +38,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Rêves",
+            "plain_text": "Parannoul",
             "href": null
           }
         ]
@@ -55,7 +55,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Le bleu a des yeux",
+              "content": "After the Magic",
               "link": null
             },
             "annotations": {
@@ -66,13 +66,90 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Le bleu a des yeux",
+            "plain_text": "After the Magic",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Le-bleu-a-des-yeux-2c2f4cf9ecf0465ca1706f21df03a193",
+    "url": "https://www.notion.so/After-the-Magic-75140f5a7df145eaa674f29b650c4cf8",
+    "public_url": null,
+    "children": []
+  },
+  {
+    "object": "page",
+    "id": "2c2f4cf9-ecf0-465c-a170-6f21df03a193",
+    "created_time": "2023-10-23T11:29:00.000Z",
+    "last_edited_time": "2023-10-24T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "36a83b73-7d40-46c1-ba28-bfa185da3700"
+    },
+    "archived": false,
+    "properties": {
+      "Artist": {
+        "id": "Aab%7B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Nujabes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Nujabes",
+            "href": null
+          }
+        ]
+      },
+      "Listened": {
+        "id": "~Xjs",
+        "type": "checkbox",
+        "checkbox": true
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Modal Soul",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Modal Soul",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Modal-Soul-2c2f4cf9ecf0465ca1706f21df03a193",
     "public_url": null,
     "children": []
   },
@@ -80,7 +157,7 @@
     "object": "page",
     "id": "05e527c2-6dcf-48c3-84ae-b79bc834b7ae",
     "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T20:27:00.000Z",
+    "last_edited_time": "2023-10-24T07:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
@@ -104,7 +181,7 @@
           {
             "type": "text",
             "text": {
-              "content": "tomcbumpz",
+              "content": "Luidji",
               "link": null
             },
             "annotations": {
@@ -115,84 +192,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "tomcbumpz",
-            "href": null
-          }
-        ]
-      },
-      "Listened": {
-        "id": "~Xjs",
-        "type": "checkbox",
-        "checkbox": true
-      },
-      "Title": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "comfortable silence",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "comfortable silence",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/comfortable-silence-05e527c26dcf48c384aeb79bc834b7ae",
-    "public_url": null,
-    "children": []
-  },
-  {
-    "object": "page",
-    "id": "b52a30cd-a138-4615-b8c5-f003e1ad4d66",
-    "created_time": "2023-07-04T15:27:00.000Z",
-    "last_edited_time": "2023-10-23T20:22:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "36a83b73-7d40-46c1-ba28-bfa185da3700"
-    },
-    "archived": false,
-    "properties": {
-      "Artist": {
-        "id": "Aab%7B",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Lorenzi",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Lorenzi",
+            "plain_text": "Luidji",
             "href": null
           }
         ]
@@ -209,7 +209,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Shallow Tears",
+              "content": "Tristesse Business Vol.1",
               "link": null
             },
             "annotations": {
@@ -220,13 +220,90 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Shallow Tears",
+            "plain_text": "Tristesse Business Vol.1",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Shallow-Tears-b52a30cda1384615b8c5f003e1ad4d66",
+    "url": "https://www.notion.so/Tristesse-Business-Vol-1-05e527c26dcf48c384aeb79bc834b7ae",
+    "public_url": null,
+    "children": []
+  },
+  {
+    "object": "page",
+    "id": "b52a30cd-a138-4615-b8c5-f003e1ad4d66",
+    "created_time": "2023-07-04T15:27:00.000Z",
+    "last_edited_time": "2023-10-24T07:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "14746066-cdc5-466d-b51a-b31efa1915ce"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "36a83b73-7d40-46c1-ba28-bfa185da3700"
+    },
+    "archived": false,
+    "properties": {
+      "Artist": {
+        "id": "Aab%7B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Madvillain",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Madvillain",
+            "href": null
+          }
+        ]
+      },
+      "Listened": {
+        "id": "~Xjs",
+        "type": "checkbox",
+        "checkbox": true
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Madvillainy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Madvillainy",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Madvillainy-b52a30cda1384615b8c5f003e1ad4d66",
     "public_url": null,
     "children": []
   }

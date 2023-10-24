@@ -1,6 +1,6 @@
-const { get } = require("./src/get.js");
-const { read } = require("./src/read.js");
-const { play } = require("./src/play.js");
+import { get } from "./src/get/get.js";
+import { read } from "./src/read/read.js";
+import { play } from "./src/play/play.js";
 
 
 async function playScripts() {
