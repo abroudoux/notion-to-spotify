@@ -26,51 +26,6 @@ desktop application [here](http://www.spotify.com/download)
 
 > The explanations come from [the shpotify repository](https://github.com/hnarayanan/shpotify) by [hnarayanan](https://github.com/hnarayanan)
 
-### With Homebrew
-
-The easiest way to install shpotify is by using the [Homebrew package
-manager](http://brew.sh):
-
-```
-brew install shpotify
-```
-
-### Manual installation
-
-If you don’t use Homebrew, you can install the script manually by
-following a few simple steps:
-
-1. Fetch a copy of this repository, either with git or [download the
-   zip archive](https://github.com/hnarayanan/shpotify/archive/master.zip).
-
-2. Navigate to the folder where you fetched the repository (unzip if
-   needed) and make sure the file called `spotify` is executable:
-   ```bash
-   cd shpotify
-   chmod +x spotify
-   ```
-
-3. Copy the file `spotify` to a convenient location in your `PATH`, or
-   set your `PATH` to include the folder where the file is located.
-
-### Connecting to Spotify’s API
-
-Shpotify needs to connect to Spotify’s API in order to find music by
-name. It is very likely you want this feature!
-
-To get this to work, you first need to sign up (or into) Spotify’s
-developer site and [create an *Application*][spotify-dev]. Once you’ve
-done so, you can find its `Client ID` and `Client Secret` values and
-enter them into your shpotify config file at `${HOME}/.shpotify.cfg`.
-
-Be sure to quote your values and don’t add any extra spaces. When
-done, it should look like the following (but with your own values):
-
-```bash
-CLIENT_ID="abc01de2fghijk345lmnop"
-CLIENT_SECRET="qr6stu789vwxyz"
-```
-
 ## Install dependencies
 
 ```bash
