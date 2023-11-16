@@ -8,6 +8,17 @@ Launch randomly an album from your Notion database
 git clone https://github.com/abroudoux/spotify-automatic-play
 ```
 
+## Install dependencies
+
+```bash
+npm install
+```
+or 
+
+```bash
+yarn install
+```
+
 ## Download and install Spotify 
 
 ### With Homebrew
@@ -25,17 +36,6 @@ desktop application [here](http://www.spotify.com/download)
 ## Install and setup Shpotify
 
 > The explanations come from [the shpotify repository](https://github.com/hnarayanan/shpotify) by [hnarayanan](https://github.com/hnarayanan)
-
-## Install dependencies
-
-```bash
-npm install
-```
-or 
-
-```bash
-yarn install
-```
 
 ## Create and setup environment
 
