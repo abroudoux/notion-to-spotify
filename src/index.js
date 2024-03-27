@@ -1,5 +1,6 @@
 import { Client, iteratePaginatedAPI } from "@notionhq/client";
 import { config } from "dotenv";
+import { promises as fsPromises } from "fs";
 
 config();
 
@@ -26,10 +27,32 @@ async function retrieveToDoBlocks(id) {
   return todoBlocks;
 }
 
-const printToDoBlocks = async () => {
+const saveToDoBlocksUncheckedJson = async () => {
   const todoBlocks = await retrieveToDoBlocks(pageId);
-  console.log("Displaying ToDo blocks:");
-  for (const block of todoBlocks) console.log(block);
+  console.log("Saving unchecked ToDo blocks to file...");
+  const uncheckedBlocks = todoBlocks.filter(
+    (block) => !block.includes("(Checked)")
+  );
+  const modifiedBlocks = uncheckedBlocks.map((block) =>
+    block.replace(" (Unchecked)", "")
+  );
+  await fsPromises.writeFile(
+    "albums.json",
+    JSON.stringify(modifiedBlocks, null, 2)
+  );
 };
 
-printToDoBlocks();
+const selectRandomAlbum = async () => {
+  const content = await fsPromises.readFile("albums.json", "utf-8");
+  const albums = JSON.parse(content);
+  const randomAlbumNumber = Math.floor(Math.random() * albums.length);
+  const randomAlbum = albums[randomAlbumNumber];
+  console.log(randomAlbum);
+};
+
+const main = async () => {
+  await saveToDoBlocksUncheckedJson();
+  await selectRandomAlbum();
+};
+
+main();
