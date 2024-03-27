@@ -10,10 +10,8 @@
     "dev": "node src/index.js"
   },
   "dependencies": {
-    "@notionhq/client": "^2.2.6",
+    "@notionhq/client": "^2.2.14",
     "child_process": "^1.0.2",
-    "dotenv": "^16.3.1",
-    "path": "^0.12.7",
-    "spotify-web-api-node": "^5.0.2"
+    "dotenv": "^16.4.5"
   }
 }
