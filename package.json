@@ -1,19 +1,13 @@
 {
-  "name": "spotify-automatic-play",
-  "description": "Launch a random album in Spotify from a Notion Database",
-  "author": "abroudoux",
+  "name": "notion-to-spotify-cli",
+  "author": "Arthur BROUDOUX <abroudoux>",
   "github": "https://www.github.com/abroudoux",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "get": "node src/get/get.js",
-    "read": "node src/read/read.js",
-    "write": "node src/write/write.js",
-    "add": "node src/add/add.js",
-    "update": "node src/update/update.js",
-    "play": "node index.js"
+    "dev": "node index.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.6",
