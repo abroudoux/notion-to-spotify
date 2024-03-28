@@ -78,6 +78,38 @@ const toggleShuffle = () => {
   });
 };
 
+const toggleRepeat = () => {
+  return new Promise((resolve, reject) => {
+    exec("spotify toggle repear", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error: ${error.message}`);
+        reject(error);
+        return;
+      }
+      if (stderr) {
+        console.error(`stderr: ${stderr}`);
+        reject(new Error(stderr));
+        return;
+      }
+
+      const isShuffleActive = stdout.includes("Spotify repeating set to true");
+
+      if (isShuffleActive) {
+        exec("spotify toggle reapeat", (error) => {
+          if (error) {
+            console.error(`Error: ${error.message}`);
+            reject(error);
+            return;
+          }
+          resolve("Repeat activated");
+        });
+      } else {
+        resolve("Reapeat deactivated");
+      }
+    });
+  });
+};
+
 const playRandomAlbum = async (randomAlbum) => {
   const randomAlbumString = randomAlbum.replace(" - ", " by");
   console.log(`Playing ${randomAlbumString}`);
@@ -89,6 +121,7 @@ const main = async () => {
   await saveToDoBlocksUncheckedJson();
   const randomAlbum = await selectRandomAlbum();
   await toggleShuffle();
+  await toggleRepeat();
   await playRandomAlbum(randomAlbum);
 };
 

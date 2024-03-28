@@ -4,10 +4,10 @@
   "github": "https://www.github.com/abroudoux",
   "license": "MIT",
   "version": "2.0.0",
-  "main": "src/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node src/index.js"
+    "dev": "node index.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.14",
