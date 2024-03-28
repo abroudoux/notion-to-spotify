@@ -43,22 +43,53 @@ const selectRandomAlbum = async () => {
   const albums = JSON.parse(content);
   const randomAlbumNumber = Math.floor(Math.random() * albums.length);
   const randomAlbum = albums[randomAlbumNumber];
-  console.log("Random album is: ", randomAlbum);
   return randomAlbum;
 };
 
-const playRandomAlbum = async () => {
-  console.log("Playing random album...");
-  const randomAlbum = await selectRandomAlbum();
+const toggleShuffle = () => {
+  return new Promise((resolve, reject) => {
+    exec("spotify toggle shuffle", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error: ${error.message}`);
+        reject(error);
+        return;
+      }
+      if (stderr) {
+        console.error(`stderr: ${stderr}`);
+        reject(new Error(stderr));
+        return;
+      }
+
+      const isShuffleActive = stdout.includes("Spotify shuffling set to true");
+
+      if (isShuffleActive) {
+        exec("spotify toggle shuffle", (error) => {
+          if (error) {
+            console.error(`Error: ${error.message}`);
+            reject(error);
+            return;
+          }
+          resolve("Shuffle activated");
+        });
+      } else {
+        resolve("Shuffle deactivated");
+      }
+    });
+  });
+};
+
+const playRandomAlbum = async (randomAlbum) => {
+  const randomAlbumString = randomAlbum.replace(" - ", " by");
+  console.log(`Playing ${randomAlbumString}`);
   const albumName = randomAlbum.replace(/.* - /, "");
-  // console.log("Album Name : ", albumName);
   exec(`spotify play album ${albumName}`);
 };
 
 const main = async () => {
   await saveToDoBlocksUncheckedJson();
-  await selectRandomAlbum();
-  await playRandomAlbum();
+  const randomAlbum = await selectRandomAlbum();
+  await toggleShuffle();
+  await playRandomAlbum(randomAlbum);
 };
 
 main();
