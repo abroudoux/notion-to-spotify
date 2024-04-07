@@ -32,8 +32,8 @@ export async function retrieveToDoBlocks(id) {
   for await (const block of iteratePaginatedAPI(notion.blocks.children.list, {
     block_id: id,
   })) {
-    const text = getTextFromToDoBlock(block);
-    if (text !== null) todoBlocks.push({ blockId: block.id, text });
+    const album = getTextFromToDoBlock(block);
+    if (album !== null) todoBlocks.push({ blockId: block.id, album });
   }
   return todoBlocks;
 }
@@ -121,8 +121,7 @@ const toggleRepeat = () => {
 };
 
 export const playRandomAlbum = async (randomAlbum) => {
-  const randomAlbumString = randomAlbum.replace(" - ", " by");
-  console.log(`Playing ${randomAlbumString}`);
+  console.log(`Playing -> ${randomAlbum}`);
   const albumName = randomAlbum.replace(/.* - /, "");
   exec(`spotify play album ${albumName}`);
 };
@@ -136,13 +135,13 @@ const markToDoAsChecked = async (blockId) => {
 
 const main = async () => {
   await checkOrCreateEnv();
-  // await saveToDoBlocksUncheckedJson();
-  // const randomAlbum = await selectRandomAlbum();
-  // const { blockId, text } = randomAlbum;
+  await saveToDoBlocksUncheckedJson();
+  const randomAlbum = await selectRandomAlbum();
+  const { blockId, album } = randomAlbum;
   // await toggleShuffle();
   // await toggleRepeat();
   // await markToDoAsChecked(blockId);
-  // await playRandomAlbum(text);
+  await playRandomAlbum(album);
 };
 
 main();
