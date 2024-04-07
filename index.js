@@ -8,6 +8,25 @@ config();
 const pageId = process.env.NOTION_PAGE_ID;
 const apiKey = process.env.NOTION_API_KEY;
 
+if (!pageId || !apiKey) {
+  pageId = input("Enter the Notion page ID: ");
+
+  if (!pageId) {
+    console.error("No page ID provided.");
+    process.exit(1);
+  } else if (!apiKey || !apiKey.match(/^secret_/)) {
+    console.error("Invalid API key provided.");
+    process.exit(1);
+  }
+
+  apiKey = input("Enter the Notion API key: ");
+
+  if (!pageId) {
+    console.error("No page ID provided.");
+    process.exit(1);
+  }
+}
+
 const notion = new Client({ auth: apiKey });
 
 const getTextFromToDoBlock = (block) => {
@@ -23,7 +42,7 @@ async function retrieveToDoBlocks(id) {
     block_id: id,
   })) {
     const text = getTextFromToDoBlock(block);
-    if (text !== null) todoBlocks.push(text);
+    if (text !== null) todoBlocks.push({ blockId: block.id, text });
   }
   return todoBlocks;
 }
@@ -117,12 +136,21 @@ const playRandomAlbum = async (randomAlbum) => {
   exec(`spotify play album ${albumName}`);
 };
 
+const markToDoAsChecked = async (blockId) => {
+  await notion.blocks.update({
+    block_id: blockId,
+    to_do: { checked: true },
+  });
+};
+
 const main = async () => {
   await saveToDoBlocksUncheckedJson();
   const randomAlbum = await selectRandomAlbum();
+  const { blockId, text } = randomAlbum;
   await toggleShuffle();
   await toggleRepeat();
-  await playRandomAlbum(randomAlbum);
+  // await markToDoAsChecked(blockId);
+  await playRandomAlbum(text);
 };
 
 main();
