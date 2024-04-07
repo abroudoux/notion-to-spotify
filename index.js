@@ -8,34 +8,25 @@ config();
 const pageId = process.env.NOTION_PAGE_ID;
 const apiKey = process.env.NOTION_API_KEY;
 
-if (!pageId || !apiKey) {
-  pageId = input("Enter the Notion page ID: ");
+export const helloWorld = async () => {
+  return "Hello World!";
+};
 
-  if (!pageId) {
-    console.error("No page ID provided.");
-    process.exit(1);
-  } else if (!apiKey || !apiKey.match(/^secret_/)) {
-    console.error("Invalid API key provided.");
-    process.exit(1);
+export const checkOrCreateEnv = async () => {
+  if (!pageId || !apiKey) {
+    throw new Error("Please provide NOTION_PAGE_ID and NOTION_API_KEY");
   }
-
-  apiKey = input("Enter the Notion API key: ");
-
-  if (!pageId) {
-    console.error("No page ID provided.");
-    process.exit(1);
-  }
-}
+};
 
 const notion = new Client({ auth: apiKey });
 
-const getTextFromToDoBlock = (block) => {
+export const getTextFromToDoBlock = (block) => {
   if (block.type !== "to_do") return null;
   const todoText = block.to_do.rich_text.map((t) => t.plain_text).join("");
   return block.to_do.checked ? null : todoText;
 };
 
-async function retrieveToDoBlocks(id) {
+export async function retrieveToDoBlocks(id) {
   console.log("Retrieving Unchecked ToDo blocks...");
   const todoBlocks = [];
   for await (const block of iteratePaginatedAPI(notion.blocks.children.list, {
@@ -144,13 +135,14 @@ const markToDoAsChecked = async (blockId) => {
 };
 
 const main = async () => {
-  await saveToDoBlocksUncheckedJson();
-  const randomAlbum = await selectRandomAlbum();
-  const { blockId, text } = randomAlbum;
-  await toggleShuffle();
-  await toggleRepeat();
+  await checkOrCreateEnv();
+  // await saveToDoBlocksUncheckedJson();
+  // const randomAlbum = await selectRandomAlbum();
+  // const { blockId, text } = randomAlbum;
+  // await toggleShuffle();
+  // await toggleRepeat();
   // await markToDoAsChecked(blockId);
-  await playRandomAlbum(text);
+  // await playRandomAlbum(text);
 };
 
 main();
