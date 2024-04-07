@@ -47,7 +47,7 @@ const saveToDoBlocksUncheckedJson = async () => {
   );
 };
 
-const selectRandomAlbum = async () => {
+export const selectRandomAlbum = async () => {
   console.log("Selecting random album...");
   const content = await fsPromises.readFile("albums.json", "utf-8");
   const albums = JSON.parse(content);
@@ -120,7 +120,7 @@ const toggleRepeat = () => {
   });
 };
 
-const playRandomAlbum = async (randomAlbum) => {
+export const playRandomAlbum = async (randomAlbum) => {
   const randomAlbumString = randomAlbum.replace(" - ", " by");
   console.log(`Playing ${randomAlbumString}`);
   const albumName = randomAlbum.replace(/.* - /, "");
