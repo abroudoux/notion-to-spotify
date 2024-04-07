@@ -40,7 +40,7 @@ export async function retrieveToDoBlocks(id) {
 
 const saveToDoBlocksUncheckedJson = async () => {
   const todoBlocks = await retrieveToDoBlocks(pageId);
-  console.log("Saving unchecked ToDo blocks to file...");
+  console.log("🗂️ Saving unchecked ToDo blocks to file...");
   await fsPromises.writeFile(
     "albums.json",
     JSON.stringify(todoBlocks, null, 2)
@@ -48,7 +48,7 @@ const saveToDoBlocksUncheckedJson = async () => {
 };
 
 export const selectRandomAlbum = async () => {
-  console.log("Selecting random album...");
+  console.log("💿 Selecting random album...");
   const content = await fsPromises.readFile("albums.json", "utf-8");
   const albums = JSON.parse(content);
   const randomAlbumNumber = Math.floor(Math.random() * albums.length);
@@ -121,7 +121,7 @@ const toggleRepeat = () => {
 };
 
 export const playRandomAlbum = async (randomAlbum) => {
-  console.log(`Playing -> ${randomAlbum}`);
+  console.log(`🎧 Playing -> ${randomAlbum}`);
   const albumName = randomAlbum.replace(/.* - /, "");
   exec(`spotify play album ${albumName}`);
 };
@@ -138,8 +138,8 @@ const main = async () => {
   await saveToDoBlocksUncheckedJson();
   const randomAlbum = await selectRandomAlbum();
   const { blockId, album } = randomAlbum;
-  // await toggleShuffle();
-  // await toggleRepeat();
+  await toggleShuffle();
+  await toggleRepeat();
   // await markToDoAsChecked(blockId);
   await playRandomAlbum(album);
 };
