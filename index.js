@@ -27,7 +27,7 @@ export const getTextFromToDoBlock = (block) => {
 };
 
 export async function retrieveToDoBlocks(id) {
-  console.log("Retrieving Unchecked ToDo blocks...");
+  console.log("🔎 Recovery of albums...");
   const todoBlocks = [];
   for await (const block of iteratePaginatedAPI(notion.blocks.children.list, {
     block_id: id,
@@ -40,7 +40,7 @@ export async function retrieveToDoBlocks(id) {
 
 const saveToDoBlocksUncheckedJson = async () => {
   const todoBlocks = await retrieveToDoBlocks(pageId);
-  console.log("🗂️ Saving unchecked ToDo blocks to file...");
+  console.log("🗂️  Backup of albums not listened to...");
   await fsPromises.writeFile(
     "albums.json",
     JSON.stringify(todoBlocks, null, 2)
