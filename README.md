@@ -1,56 +1,60 @@
-# Spotify automatic play from Notion
+# Notion to Spotify CLI
 
-Launch randomly an album from your Notion database
+## 💻・About
 
-## Clone this repository
+From a Notion list, launch randomly an album on Spotify
+
+## 🎯・Installation
+
+### Clone this repository
 
 ```bash
 git clone https://github.com/abroudoux/spotify-automatic-play
 ```
 
-## Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
-or 
+
+or
 
 ```bash
 yarn install
 ```
 
-## Download and install Spotify 
+### Download and install Spotify
 
-### With Homebrew
+#### With Homebrew
 
 ```bash
 brew install --cask spotify
 ```
 
-### Manual installation
+#### Manual installation
 
 [Download and install](http://www.spotify.com/download) the Spotify
 desktop application [here](http://www.spotify.com/download)
 
+### Install and setup Shpotify
 
-## Install and setup Shpotify
+> The explanations are detailed in the [shpotify repository](https://github.com/hnarayanan/shpotify) by [hnarayanan](https://github.com/hnarayanan)
 
-> The explanations come from [the shpotify repository](https://github.com/hnarayanan/shpotify) by [hnarayanan](https://github.com/hnarayanan)
+### Create and setup environment
 
-## Create and setup environment
-
-### Create a .env file
+#### Create a .env file
 
 ```bash
 touch .env
 ```
 
-### Setup like the .env.example
+#### Setup like the .env.example
 
 ```bash
 // Notion
 NOTION_DATABASE_ID=""  // Copy link to view -> `https://www.notion.so/{notion_database_id}?v`
-NOTION_API_KEY="" // Settings -> Connections -> Develop or manage integration -> New connection -> Start with 'secret_' 
+NOTION_API_KEY="" // Settings -> Connections -> Develop or manage integration -> New connection -> Start with 'secret_'
 
 
 // Spotify -> Go to "https://developer.spotify.com/dashboard/" then click to 'Create a new Application'
@@ -58,32 +62,33 @@ CLIENT_ID=""
 CLIENT_SECRET=""
 ```
 
-## Run the project !
+### Run the project !
 
 ```bash
 npm run play
 ```
 
-## Copyright and licences
+## 🧑‍🤝‍🧑・Contributing
 
-MIT License
+To contribute to `tailwindcss-breakpoints-indicators` in development, follow these steps:
 
-Copyright (c) 2023 abroudoux
+1. Fork the project.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. Create a branch with [conventionnal name](https://www.conventionalcommits.org/en/v1.0.0/).
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+   - fix: `bugfix/the-bug-fixed`
+   - features: `feature/the-amazing-feature`
+   - test: `test/the-famous-test`
+   - hotfix `hotfix/oh-my-god-bro`
+   - wip `wip/the-work-name-in-progress`
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 🎯・Roadmap
+
+- [ ] Increase performance
+- [ ] Automatic checked of the album choosed when finished
+- [ ] Send notification to the client
+- [ ] Create tests
+
+## 📑・Licence
+
+This project is under MIT license. For more information, please see the file [LICENSE](./LICENSE).
