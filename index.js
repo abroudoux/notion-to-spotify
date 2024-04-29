@@ -126,7 +126,7 @@ export const playRandomAlbum = async (randomAlbum) => {
   exec(`spotify play album ${albumName}`);
 };
 
-const markToDoAsChecked = async (blockId) => {
+export const markAlbumAsListened = async (blockId) => {
   await notion.blocks.update({
     block_id: blockId,
     to_do: { checked: true },
@@ -140,7 +140,7 @@ const main = async () => {
   const { blockId, album } = randomAlbum;
   await toggleShuffle();
   await toggleRepeat();
-  // await markToDoAsChecked(blockId);
+  // await markAlbumAsListened(blockId);
   await playRandomAlbum(album);
 };
 

@@ -9,19 +9,13 @@ From a Notion list, launch randomly an album on Spotify
 ### Clone this repository
 
 ```bash
-git clone https://github.com/abroudoux/spotify-automatic-play
+git clone https://github.com/abroudoux/notion-to-spotify-cli.git
 ```
 
 ### Install dependencies
 
 ```bash
 npm install
-```
-
-or
-
-```bash
-yarn install
 ```
 
 ### Download and install Spotify
@@ -49,28 +43,22 @@ desktop application [here](http://www.spotify.com/download)
 touch .env
 ```
 
-#### Setup like the .env.example
+#### Setup .env
 
 ```bash
-// Notion
-NOTION_DATABASE_ID=""  // Copy link to view -> `https://www.notion.so/{notion_database_id}?v`
-NOTION_API_KEY="" // Settings -> Connections -> Develop or manage integration -> New connection -> Start with 'secret_'
-
-
-// Spotify -> Go to "https://developer.spotify.com/dashboard/" then click to 'Create a new Application'
-CLIENT_ID=""
-CLIENT_SECRET=""
+NOTION_DATABASE_ID=""
+NOTION_API_KEY=""
 ```
 
 ### Run the project !
 
 ```bash
-npm run play
+npm run dev
 ```
 
 ## 🧑‍🤝‍🧑・Contributing
 
-To contribute to `tailwindcss-breakpoints-indicators` in development, follow these steps:
+To contribute to `notion-to-spotify-cli` in development, follow these steps:
 
 1. Fork the project.
 
@@ -87,7 +75,7 @@ To contribute to `tailwindcss-breakpoints-indicators` in development, follow the
 - [ ] Increase performance
 - [ ] Automatic checked of the album choosed when finished
 - [ ] Send notification to the client
-- [ ] Create tests
+- [ ] Implement tests
 
 ## 📑・Licence
 
